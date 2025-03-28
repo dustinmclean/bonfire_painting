@@ -1,0 +1,151 @@
+/* Box-sizing reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove list styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove text decoration and inherit font styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+
+  /* Remove default button styles */
+  button, input, textarea {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  /* Reset images and videos */
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Fonts */
+
+  @font-face {
+    font-family: "ITC Avant Garde Pro Bold";
+    font-weight: 800;
+    font-style: bold;
+    src: url("./fonts/ITCAvantGardePro-Bold.otf")
+  }
+
+  @font-face {
+    font-family: "ITC Avant Garde Pro Medium";
+    font-weight: 500;
+    font-style: normal;
+    src: url("./fonts/ITCAvantGardePro-Md.otf")
+  }
+
+  @font-face {
+    font-family: "Graphik Regular";
+    font-weight: 400;
+    font-style: normal;
+    src: url("./fonts/Graphik-Regular-Trial.otf")
+  }
+
+  @font-face {
+    font-family: "Kaushan Script";
+    font-weight: 500;
+    font-style: normal;
+    src: url("./fonts/KaushanScript-Regular.otf")
+  }
+
+  /* Declaring CSS Variables */
+
+  :root {
+    --background-color: #EAEAEA;
+    --black-color: #261E1E;
+    --red-color: #B7274B;
+    --dark-orange: #E33220;
+    --light-orange: #DF6B03;
+  }
+
+  /* Setting Weights */
+
+  h1 {
+    font-family: "ITC Avant Garde Pro Bold";
+    font-weight: 800;
+    font-style: bold;
+    color: var(--black-color);
+  }
+
+  h2 {
+    font-family: "Graphik Regular";
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h3 {
+    font-family: "Kaushan Script";
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  /* Global Styles */
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100%;
+  }
+
+  /* Navigation Section */
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem 5vw;
+  }
+
+  .nav-logo {
+    height: clamp(8rem, 8vw, 10rem);
+  }
+
+  .nav-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2.2rem;
+    /* padding-top: 2vw; */
+  }
+
+  .nav-items {
+    display: flex;
+    gap: 4rem;
+    font-family: "ITC Avant Garde Pro Bold";
+    color: var(--black-color);
+    font-size: clamp(1.3rem, 1.3vw, 2rem);
+    
+  }
+
+  .navigation-cta-button {
+    align-self: flex-end;
+    font-family: "ITC Avant Garde Pro Medium";
+    color: var(--background-color);
+    font-size: clamp(1.3rem, 1.3vw, 2rem);;
+    background-color: var(--black-color);
+    padding: 13px 14px 8px;
+    border-radius: 20px;
+    cursor: pointer;
+
+  }
